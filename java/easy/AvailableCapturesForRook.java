@@ -65,16 +65,11 @@ public class AvailableCapturesForRook{
         for(int i=0; i<8; i++){
             for(int j=0; j<8; j++){
                 if(board[i][j] == 'R'){
-
                     for(int k=0; k<4; k++){
-
                         int x=i, y=j;
-
                         while(true){
-
                             x += dx[k];
                             y += dy[k];
-
                             if(x<0 || x>=8 || y<0 || y>=8 || board[x][y] == 'B'){
                                 break;
                             }else if (board[x][y] == 'p'){
