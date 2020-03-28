@@ -54,7 +54,6 @@
 
 public class AvailableCapturesForRook{
 
-
     public static int numRookCaptures(char[][] board) {
 
         int[] dx = {-1, 1, 0, 0};
@@ -88,6 +87,7 @@ public class AvailableCapturesForRook{
 
 
     public static void main(String[] args) {
+
         char [][] board = {{'.','.','.','.','.','.','.','.'},
                            {'.','.','.','p','.','.','.','.'},
                            {'.','.','.','p','.','.','.','.'},
@@ -96,6 +96,7 @@ public class AvailableCapturesForRook{
                            {'.','.','.','B','.','.','.','.'},
                            {'.','.','.','p','.','.','.','.'},
                            {'.','.','.','.','.','.','.','.'}};
+                           
         System.out.println(numRookCaptures(board));
     }
 
