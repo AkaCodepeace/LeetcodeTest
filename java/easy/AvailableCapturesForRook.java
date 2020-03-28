@@ -18,7 +18,8 @@
 [".",".",".",".",".",".",".","."],
 [".",".",".",".",".",".",".","."]]
 输出：3
-解释：在本例中，车能够捕获所有的卒。
+解释：
+在本例中，车能够捕获所有的卒。
 
 示例 2：
 输入：
@@ -31,7 +32,8 @@
 [".",".",".",".",".",".",".","."],
 [".",".",".",".",".",".",".","."]]
 输出：0
-解释：象阻止了车捕获任何卒。
+解释：
+象阻止了车捕获任何卒。
 
 示例 3：
 输入：
@@ -55,7 +57,6 @@
 public class AvailableCapturesForRook{
 
     public static int numRookCaptures(char[][] board) {
-
         int[] dx = {-1, 1, 0, 0};
         int[] dy = {0, 0, -1, 1};
         
@@ -64,9 +65,13 @@ public class AvailableCapturesForRook{
         for(int i=0; i<8; i++){
             for(int j=0; j<8; j++){
                 if(board[i][j] == 'R'){
+
                     for(int k=0; k<4; k++){
+
                         int x=i, y=j;
+
                         while(true){
+
                             x += dx[k];
                             y += dy[k];
 
@@ -82,6 +87,7 @@ public class AvailableCapturesForRook{
                 }
             }
         }
+        
         return res;
     }
 
